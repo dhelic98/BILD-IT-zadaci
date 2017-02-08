@@ -29,6 +29,11 @@ public class zadatak_3 {
 		} else if (broj2 > broj1) {
 			najveciDjelilac = broj2;
 		}
+		/*
+		 * NZD pronalazimo koristeci petlju s time da krecemo od veceg od 2 broja
+		 * prolazimo kroz petlju i prvi broj s kojim je moguce podjeliti oba broja je
+		 * NZD
+		 */
 		boolean trigger = false;
 		while (trigger != true) {
 			if ((broj1 % najveciDjelilac == 0)
