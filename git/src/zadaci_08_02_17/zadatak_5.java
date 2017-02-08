@@ -16,17 +16,21 @@ public class zadatak_5 {
 		Scanner uInput = new Scanner(System.in);
 		ArrayList<Integer> list = new ArrayList<>();
 		ArrayList<Integer> ponavljanja = new ArrayList<>();
+		//Unos od strane korisnika
 		System.out.println("Unesite broj");
 		int broj = uInput.nextInt();
+		//Uslov za prekidanje unosa
 		while (broj != 0) {
 			list.add(broj);
 			broj = uInput.nextInt();
 
 		}
+		//Sortiranje i odredjivanje najveceg broja
 		Collections.sort(list);
 		Collections.reverse(list);
 		int max = list.get(0);
 		int maxCounter = 0;
+		//Prebrojavanje najveceg broja
 		for (int i = 0; i < list.size(); i++) {
 			if (list.get(i).equals(max)) {
 				maxCounter++;
