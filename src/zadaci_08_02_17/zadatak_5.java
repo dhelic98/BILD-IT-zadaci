@@ -33,7 +33,7 @@ public class zadatak_5 {
 			}
 		}
 		System.out.println("Najveci broj je " + max + " i ponovio se "
-				+ maxCounter);
+				+ maxCounter + " puta.");
 
 	}
 }
