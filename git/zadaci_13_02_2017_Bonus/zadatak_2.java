@@ -35,6 +35,12 @@ public class zadatak_2 {
 						.println("Zamislimo da imamo avion koji može letjeti u prošlost brzinom od jedne godine po sekundi");
 				System.out.println("Unesite koliko godina unazad zelite ici?");
 				long years = uInput.nextLong();
+				//Unos mora biti pozitivan
+				while (years <= 0) {
+					System.out
+							.println("Vas unos mora biti pozitivan broj veci od nula");
+					years = uInput.nextLong();
+				}
 				// Dkelarisemo arrayListu i pozivamo metodu
 				ArrayList<Double> timeSpentOnTravel = timeSpentAirplane(years);
 				System.out.print("Da bi otputovali " + years
