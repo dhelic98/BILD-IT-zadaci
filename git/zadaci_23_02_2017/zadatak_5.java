@@ -21,8 +21,8 @@ public class zadatak_5 {
 			if (number <= 1) {
 				System.out.println("Input must be larger than 1");
 				continue;
-			} else if (number > 100) {
-				System.out.println("Input must be smaller than 100");
+			} else if (number > 25) {
+				System.out.println("Input must be smaller than 25");
 				continue;
 			}
 			// calling method
