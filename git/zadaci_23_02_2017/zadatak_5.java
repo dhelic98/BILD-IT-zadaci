@@ -35,15 +35,23 @@ public class zadatak_5 {
 	public static void printPyramid(int number) {
 		// Method for printing out pyramid
 		for (int i = 1; i <= number; i++) {
+
 			for (int j = number; j > i; j--) {
 				System.out.print("   ");
 			}
 			for (int k = i; k > 0; k--) {
-				System.out.print(" " + k + " ");
-
+				if (k < 10) {
+					System.out.print(" " + k + " ");
+				} else {
+					System.out.print(k + " ");
+				}
 			}
 			for (int l = 2; l <= i; l++) {
-				System.out.print(" " + l + " ");
+				if (l < 10) {
+					System.out.print(" " + l + " ");
+				} else {
+					System.out.print(l + " ");
+				}
 
 			}
 
