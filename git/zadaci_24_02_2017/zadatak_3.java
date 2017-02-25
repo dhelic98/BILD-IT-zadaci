@@ -17,15 +17,15 @@ public class zadatak_3 {
 		while (true) {
 			try {
 				//Input by user
-				System.out.println("Enter number of short type below 50");
+				System.out.println("Enter number of short type below 32767");
 				short number = uInput.nextShort();
-				if (number > 50) {
+				if (number > 32767) {
 					continue;
 				}
 
 				//Formating and printing out the result
 				System.out.println("Bit for input is "
-						+ String.format("%016d", Integer.parseInt(Integer
+						+ String.format("%016d", Long.parseLong(Integer
 								.toBinaryString(number))));
 				break;
 
