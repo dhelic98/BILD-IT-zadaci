@@ -22,7 +22,7 @@ public class Zadatak_3 {
 		// Printing out result
 		System.out.println(myp1.distance() + " is distance between x and y");
 		System.out.println("Distance between to lines(x1,y1 and x2,y2) is "
-				+ myp1.distance(11, -3));
+				+ myp2.distance(11, -3));
 
 	}
 
